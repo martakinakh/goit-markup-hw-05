@@ -51,8 +51,18 @@
             <section class="hero overlay">
                 <div class="container">
                 <h1 class="hero-subject">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-button">Заказать услугу</button>
+                <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
                 </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button type="button" class="modal-button" data-modal-close>
+                     <svg width="18px" height="18px">
+                         <use href="./images/icons.svg#icon-close"></use>
+                     </svg>
+                    </button>
+                </div>
+            </div>
+
             </section>
         
     <section class="hero-section section">
@@ -103,13 +113,28 @@
             <h2 class="about-title">Чем мы занимаемся</h2>
             <ul class="about-list list">
                 <li class="about-item">
+                    <div class="about-relative">
                     <img src="./images/img-1.jpg" alt="Работа 1" width="370" height="294">
+                    <div class="about-container">
+                        <h3 class="about-box">Десктопные приложения</h3>
+                    </div>
+                    </div>
                 </li>
                 <li class="about-item">
+                    <div class="about-relative">
                     <img src="./images/img-2.jpg" alt="Работа 2" width="370" height="294">
+                    <div class="about-container">
+                        <h3 class="about-box">Мобильные приложения</h3>
+                    </div>
+                    </div>
                 </li>
                 <li class="about-item">
+                    <div class="about-relative">
                     <img src="./images/img-3.jpg" alt="Работа 3" width="370" height="294">
+                    <div class="about-container">
+                        <h3 class="about-box">Дизайнерские решения</h3>
+                    </div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -345,6 +370,11 @@
 
         </div>
     </footer>
+ 
     
+
+
+    <script src="./js/modal.js"></script>
+
 </body>
 </html>
